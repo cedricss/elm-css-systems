@@ -12,12 +12,16 @@ module Css.Systems.Utilities exposing
 @docs paddingX, paddingY, marginX, marginY
 
 
-# Flex items shortcuts
+# Flex items
+
+Control how flex items grow and shrink.
 
 @docs flexInitial, flexIgnoreInitialSize, flexAuto, flexNone
 
 
-# Align items shortcuts
+# Align items
+
+Control how flex items are positioned.
 
 @docs itemsStretch, itemsStart, itemsCenter, itemsEnd, itemsBaseline
 

@@ -32,9 +32,11 @@ view =
 ```
 
 [Browse all colors ➝](https://cedricsoulas.com/elm/css/systems#colors)
-![Color system](img/colors.png)
+![Color system](https://github.com/cedricss/elm-css-systems/raw/master/img/colors.png)
 
-## Spacing system
+## Spacing and sizing systems
+
+### Spacing
 
 ```elm
 view =
@@ -49,11 +51,21 @@ view =
 ```
 
 [Browse spacing ➝](https://cedricsoulas.com/elm/css/systems#spacing)
-![Color system](img/spacing.png)
+![Color system](https://github.com/cedricss/elm-css-systems/raw/master/img/spacing.png)
+
+- [Learn more about `fluid`](https://package.elm-lang.org/packages/cedricss/elm-css-systems/latest/Css-Systems-Spacing#fluid)
+
+### Max height and max width
+
+[Browse all ➝](https://package.elm-lang.org/packages/cedricss/elm-css-systems/latest/Css-Systems-Spacing)
 
 ## Other systems and utilities
 
-[Browse the full API](https://package.elm-lang.org/packages/cedricss/elm-css-systems/latest)
+- Padding and margin utilities
+- Flex items
+- Align items
+
+[Browse all](https://package.elm-lang.org/packages/cedricss/elm-css-systems/latest/Css-Systems-Utilities)
 
 ## Links
 

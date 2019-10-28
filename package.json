@@ -1,6 +1,6 @@
 {
   "name": "elm-css-systems",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Design systems based on elm-css, inspired by Tailwind.",
   "homepage": "https://cedricsoulas.com/elm/css/systems",
   "author": "Cédric Soulas",
