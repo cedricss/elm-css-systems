@@ -42,7 +42,7 @@ paddingX spacing =
 
 {-| Set vertical padding.
 -}
-paddingY : { compatible | value : String, length : Compatible, numericValue : Float, units : units, unitLabel : String } -> Style
+paddingY : Length compatible units -> Style
 paddingY spacing =
     batch
         [ paddingTop spacing
