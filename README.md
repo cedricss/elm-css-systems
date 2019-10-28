@@ -11,7 +11,7 @@ elm install cedricss/elm-css-systems
 import Css exposing (..)
 import Css.Systems.Colors exposing (..)
 import Css.Systems.Spacing exposing (..)
-import Css.Systems.Utitilies exposing (..)
+import Css.Systems.Utilities exposing (..)
 import Html.Styled exposing (div)
 import Html.Styled.Attributes as Attributes exposing (css)
 ```
@@ -25,6 +25,7 @@ view =
   div
       [ css
           [ backgroundColor indigo300
+          , hover [ backgroundColor indigo400 ]
           , color indigo900
           ]
       ]

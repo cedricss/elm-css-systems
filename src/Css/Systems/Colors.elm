@@ -4,6 +4,8 @@ module Css.Systems.Colors exposing (black, blue100, blue200, blue300, blue400, b
 
 [cedricsoulas.com/elm/css/systems#colors](https://cedricsoulas.com/elm/css/systems#colors)
 
+![Color system](https://github.com/cedricss/elm-css-systems/raw/master/img/colors.png)
+
 @docs black, blue100, blue200, blue300, blue400, blue500, blue600, blue700, blue800, blue900, gray100, gray200, gray300, gray400, gray500, gray600, gray700, gray800, gray900, green100, green200, green300, green400, green500, green600, green700, green800, green900, indigo100, indigo200, indigo300, indigo400, indigo500, indigo600, indigo700, indigo800, indigo900, orange100, orange200, orange300, orange400, orange500, orange600, orange700, orange800, orange900, pink100, pink200, pink300, pink400, pink500, pink600, pink700, pink800, pink900, purple100, purple200, purple300, purple400, purple500, purple600, purple700, purple800, purple900, red100, red200, red300, red400, red500, red600, red700, red800, red900, teal100, teal200, teal300, teal400, teal500, teal600, teal700, teal800, teal900, white, yellow100, yellow200, yellow300, yellow400, yellow500, yellow600, yellow700, yellow800, yellow900
 
 -}

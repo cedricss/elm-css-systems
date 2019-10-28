@@ -1,29 +1,47 @@
 module Css.Systems.Spacing exposing
-    ( maxHeightXS, maxHeightSM, maxHeightMD, maxHeightLG, maxHeightXL, maxHeight2XL, maxHeight3XL, maxHeight4XL, maxHeight5XL, maxHeight6XL, maxHeightFull
-    , maxWidthXS, maxWidthSM, maxWidthMD, maxWidthLG, maxWidthXL, maxWidth2XL, maxWidth3XL, maxWidth4XL, maxWidth5XL, maxWidth6XL, maxWidthFull
-    , fluid, space0, space1, space10, space12, space16, space2, space20, space24, space3, space32, space4, space40, space48, space5, space56, space6, space64, space8
+    ( fluid, space0, space1, space2, space3, space4, space5, space6, space8, space10, space12, space16, space20, space24, space32, space40, space48, space56, space64
+    , sizeXS, sizeSM, sizeMD, sizeLG, sizeXL, size2XL, size3XL, size4XL, size5XL, size6XL, sizeFull
     )
 
 {-| Spacing and sizing system
 
 
-# Max height
-
-@docs maxHeightXS, maxHeightSM, maxHeightMD, maxHeightLG, maxHeightXL, maxHeight2XL, maxHeight3XL, maxHeight4XL, maxHeight5XL, maxHeight6XL, maxHeightFull
-
-
-# Max width
-
-@docs maxWidthXS, maxWidthSM, maxWidthMD, maxWidthLG, maxWidthXL, maxWidth2XL, maxWidth3XL, maxWidth4XL, maxWidth5XL, maxWidth6XL, maxWidthFull
-
-
 # Spacing
 
-@docs fluid, space0, space1, space10, space12, space16, space2, space20, space24, space3, space32, space4, space40, space48, space5, space56, space6, space64, space8
+Spacing values work great with padding, margin, width and height.
+
+    view =
+        div
+            [ css
+                [ marginTop space8
+                , padding space2
+                , width space32
+                ]
+            ]
+
+![Spacing systems](https://github.com/cedricss/elm-css-systems/raw/master/img/spacing.png)
+
+@docs fluid, space0, space1, space2, space3, space4, space5, space6, space8, space10, space12, space16, space20, space24, space32, space40, space48, space56, space64
+
+
+# Sizing
+
+Sizing values work great with width, height, maxWidth and maxHeight.
+
+    view =
+        div
+            [ css
+                [ displayFlex
+                , flexWrap wrap
+                , maxWidth size3XL
+                ]
+            ]
+
+@docs sizeXS, sizeSM, sizeMD, sizeLG, sizeXL, size2XL, size3XL, size4XL, size5XL, size6XL, sizeFull
 
 -}
 
-import Css exposing (Pct, maxHeight, maxWidth, pct, px, rem)
+import Css exposing (Pct, pct, px, rem)
 
 
 {-| px 0
@@ -171,228 +189,114 @@ fluid numerator denominator =
 
 
 
-{- MAX WIDTH -}
+{- SIZING -}
 
 
 {-|
 
-    maxWidth (rem 20)
+    rem 20
 
 -}
-maxWidthXS : Css.Style
-maxWidthXS =
-    maxWidth (rem 20)
+sizeXS : Css.Rem
+sizeXS =
+    rem 20
 
 
 {-|
 
-    maxWidth (rem 24)
+    rem 24
 
 -}
-maxWidthSM : Css.Style
-maxWidthSM =
-    maxWidth (rem 24)
+sizeSM : Css.Rem
+sizeSM =
+    rem 24
 
 
 {-|
 
-    maxWidth (rem 28)
+    rem 28
 
 -}
-maxWidthMD : Css.Style
-maxWidthMD =
-    maxWidth (rem 28)
+sizeMD : Css.Rem
+sizeMD =
+    rem 28
 
 
 {-|
 
-    maxWidth (rem 32)
+    rem 32
 
 -}
-maxWidthLG : Css.Style
-maxWidthLG =
-    maxWidth (rem 32)
+sizeLG : Css.Rem
+sizeLG =
+    rem 32
 
 
 {-|
 
-    maxWidth (rem 36)
+    rem 36
 
 -}
-maxWidthXL : Css.Style
-maxWidthXL =
-    maxWidth (rem 36)
+sizeXL : Css.Rem
+sizeXL =
+    rem 36
 
 
 {-|
 
-    maxWidth (rem 42)
+    rem 42
 
 -}
-maxWidth2XL : Css.Style
-maxWidth2XL =
-    maxWidth (rem 42)
+size2XL : Css.Rem
+size2XL =
+    rem 42
 
 
 {-|
 
-    maxWidth (rem 48)
+    rem 48
 
 -}
-maxWidth3XL : Css.Style
-maxWidth3XL =
-    maxWidth (rem 48)
+size3XL : Css.Rem
+size3XL =
+    rem 48
 
 
 {-|
 
-    maxWidth (rem 56)
+    rem 56
 
 -}
-maxWidth4XL : Css.Style
-maxWidth4XL =
-    maxWidth (rem 56)
+size4XL : Css.Rem
+size4XL =
+    rem 56
 
 
 {-|
 
-    maxWidth (rem 64)
+    rem 64
 
 -}
-maxWidth5XL : Css.Style
-maxWidth5XL =
-    maxWidth (rem 64)
+size5XL : Css.Rem
+size5XL =
+    rem 64
 
 
 {-|
 
-    maxWidth (rem 72)
+    rem 72
 
 -}
-maxWidth6XL : Css.Style
-maxWidth6XL =
-    maxWidth (rem 72)
+size6XL : Css.Rem
+size6XL =
+    rem 72
 
 
 {-|
 
-    maxWidth (pct 100)
+    pct 100
 
 -}
-maxWidthFull : Css.Style
-maxWidthFull =
-    maxWidth (pct 100)
-
-
-
-{- MAX HEIGHT -}
-
-
-{-|
-
-    maxHeight (rem 20)
-
--}
-maxHeightXS : Css.Style
-maxHeightXS =
-    maxHeight (rem 20)
-
-
-{-|
-
-    maxHeight (rem 24)
-
--}
-maxHeightSM : Css.Style
-maxHeightSM =
-    maxHeight (rem 24)
-
-
-{-|
-
-    maxHeight (rem 28)
-
--}
-maxHeightMD : Css.Style
-maxHeightMD =
-    maxHeight (rem 28)
-
-
-{-|
-
-    maxHeight (rem 32)
-
--}
-maxHeightLG : Css.Style
-maxHeightLG =
-    maxHeight (rem 32)
-
-
-{-|
-
-    maxHeight (rem 36)
-
--}
-maxHeightXL : Css.Style
-maxHeightXL =
-    maxHeight (rem 36)
-
-
-{-|
-
-    maxHeight (rem 42)
-
--}
-maxHeight2XL : Css.Style
-maxHeight2XL =
-    maxHeight (rem 42)
-
-
-{-|
-
-    maxHeight (rem 48)
-
--}
-maxHeight3XL : Css.Style
-maxHeight3XL =
-    maxHeight (rem 48)
-
-
-{-|
-
-    maxHeight (rem 56)
-
--}
-maxHeight4XL : Css.Style
-maxHeight4XL =
-    maxHeight (rem 56)
-
-
-{-|
-
-    maxHeight (rem 64)
-
--}
-maxHeight5XL : Css.Style
-maxHeight5XL =
-    maxHeight (rem 64)
-
-
-{-|
-
-    maxHeight (rem 72)
-
--}
-maxHeight6XL : Css.Style
-maxHeight6XL =
-    maxHeight (rem 72)
-
-
-{-|
-
-    maxHeight (pct 100)
-
--}
-maxHeightFull : Css.Style
-maxHeightFull =
-    maxHeight (pct 100)
+sizeFull : Css.Pct
+sizeFull =
+    pct 100
