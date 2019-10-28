@@ -32,7 +32,8 @@ view =
 ```
 
 [Browse all colors ➝](https://cedricsoulas.com/elm/css/systems#colors)
-![Color system](https://github.com/cedricss/elm-css-systems/raw/master/img/colors.png)
+
+<img width="875px" src="https://github.com/cedricss/elm-css-systems/raw/master/img/colors.png" alt="color system" />
 
 ## Spacing and sizing systems
 
@@ -51,7 +52,8 @@ view =
 ```
 
 [Browse spacing ➝](https://cedricsoulas.com/elm/css/systems#spacing)
-![Color system](https://github.com/cedricss/elm-css-systems/raw/master/img/spacing.png)
+
+<img width="875px" src="https://github.com/cedricss/elm-css-systems/raw/master/img/spacing.png" alt="spacing system" />
 
 - [Learn more about `fluid`](https://package.elm-lang.org/packages/cedricss/elm-css-systems/latest/Css-Systems-Spacing#fluid)
 
@@ -65,7 +67,7 @@ view =
 - Flex items
 - Align items
 
-[Browse all](https://package.elm-lang.org/packages/cedricss/elm-css-systems/latest/Css-Systems-Utilities)
+[Browse all ➝](https://package.elm-lang.org/packages/cedricss/elm-css-systems/latest/Css-Systems-Utilities)
 
 ## Links
 
