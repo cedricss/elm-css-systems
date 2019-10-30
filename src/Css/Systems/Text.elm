@@ -13,6 +13,8 @@ module Css.Systems.Text exposing
 
 # Font size system
 
+[cedricsoulas.com/elm/css/systems#text](https://cedricsoulas.com/elm/css/systems#text)
+
 @docs textXS, textSM, textBase, textLG, textXL, text2XL, text3XL, text4XL, text5XL, text6XL
 
 -}

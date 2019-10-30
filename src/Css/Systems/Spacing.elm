@@ -33,8 +33,6 @@ Use fluid and size values to set width, height, maxWidth and maxHeight of layout
                 ]
             ]
 
-![Sizing systems](https://github.com/cedricss/elm-css-systems/raw/master/img/sizing.png)
-
 
 # Spacing
 
