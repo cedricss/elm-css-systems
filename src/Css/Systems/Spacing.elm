@@ -1,16 +1,16 @@
 module Css.Systems.Spacing exposing
-    ( fluid, space0, space1, space2, space3, space4, space5, space6, space8, space10, space12, space16, space20, space24, space32, space40, space48, space56, space64
-    , sizeXS, sizeSM, sizeMD, sizeLG, sizeXL, size2XL, size3XL, size4XL, size5XL, size6XL, sizeFull
+    ( space0, space1, space2, space3, space4, space5, space6, space8, space10, space12, space16, space20, space24, space32, space40, space48, space56, space64
+    , fluid, sizeXS, sizeSM, sizeMD, sizeLG, sizeXL, size2XL, size3XL, size4XL, size5XL, size6XL, sizeFull
     )
 
-{-| Spacing and sizing system
+{-|
 
 
-# Spacing
+# Spacing and sizing system
 
-Spacing values work great with padding, margin, width and height.
+Use space values to set padding, margin, width and height to UI elements:
 
-    view =
+    element =
         div
             [ css
                 [ marginTop space8
@@ -21,153 +21,217 @@ Spacing values work great with padding, margin, width and height.
 
 ![Spacing systems](https://github.com/cedricss/elm-css-systems/raw/master/img/spacing.png)
 
-@docs fluid, space0, space1, space2, space3, space4, space5, space6, space8, space10, space12, space16, space20, space24, space32, space40, space48, space56, space64
-
-
-# Sizing
-
-Sizing values work great with width, height, maxWidth and maxHeight.
+Use fluid and size values to set width, height, maxWidth and maxHeight of layout blocks:
 
     view =
         div
             [ css
                 [ displayFlex
                 , flexWrap wrap
-                , maxWidth size3XL
+                , maxHeight size3XL
+                , width (fluid 2 3)
                 ]
             ]
 
-@docs sizeXS, sizeSM, sizeMD, sizeLG, sizeXL, size2XL, size3XL, size4XL, size5XL, size6XL, sizeFull
+![Sizing systems](https://github.com/cedricss/elm-css-systems/raw/master/img/sizing.png)
+
+
+# Spacing
+
+@docs space0, space1, space2, space3, space4, space5, space6, space8, space10, space12, space16, space20, space24, space32, space40, space48, space56, space64
+
+
+# Sizing
+
+@docs fluid, sizeXS, sizeSM, sizeMD, sizeLG, sizeXL, size2XL, size3XL, size4XL, size5XL, size6XL, sizeFull
 
 -}
 
 import Css exposing (Pct, pct, px, rem)
 
 
-{-| px 0
+{-|
+
+    px 0
+
 -}
 space0 : Css.Px
 space0 =
     px 0
 
 
-{-| rem 0.25
+{-|
+
+    rem 0.25
+
 -}
 space1 : Css.Rem
 space1 =
     rem 0.25
 
 
-{-| rem 0.5
+{-|
+
+    rem 0.5
+
 -}
 space2 : Css.Rem
 space2 =
     rem 0.5
 
 
-{-| rem 0.75
+{-|
+
+    rem 0.75
+
 -}
 space3 : Css.Rem
 space3 =
     rem 0.75
 
 
-{-| rem 1
+{-|
+
+    rem 1
+
 -}
 space4 : Css.Rem
 space4 =
     rem 1
 
 
-{-| rem 1.25
+{-|
+
+    rem 1.25
+
 -}
 space5 : Css.Rem
 space5 =
     rem 1.25
 
 
-{-| rem 1.5
+{-|
+
+    rem 1.5
+
 -}
 space6 : Css.Rem
 space6 =
     rem 1.5
 
 
-{-| rem 2
+{-|
+
+    rem 2
+
 -}
 space8 : Css.Rem
 space8 =
     rem 2
 
 
-{-| rem 2.5
+{-|
+
+    rem 2.5
+
 -}
 space10 : Css.Rem
 space10 =
     rem 2.5
 
 
-{-| rem 3
+{-|
+
+    rem 3
+
 -}
 space12 : Css.Rem
 space12 =
     rem 3
 
 
-{-| rem 4
+{-|
+
+    rem 4
+
 -}
 space16 : Css.Rem
 space16 =
     rem 4
 
 
-{-| rem 5
+{-|
+
+    rem 5
+
 -}
 space20 : Css.Rem
 space20 =
     rem 5
 
 
-{-| rem 6
+{-|
+
+    rem 6
+
 -}
 space24 : Css.Rem
 space24 =
     rem 6
 
 
-{-| rem 8
+{-|
+
+    rem 8
+
 -}
 space32 : Css.Rem
 space32 =
     rem 8
 
 
-{-| rem 10
+{-|
+
+    rem 10
+
 -}
 space40 : Css.Rem
 space40 =
     rem 10
 
 
-{-| rem 12
+{-|
+
+    rem 12
+
 -}
 space48 : Css.Rem
 space48 =
     rem 12
 
 
-{-| rem 14
+{-|
+
+    rem 14
+
 -}
 space56 : Css.Rem
 space56 =
     rem 14
 
 
-{-| rem 16
+{-|
+
+    rem 16
+
 -}
 space64 : Css.Rem
 space64 =
     rem 16
+
+
+
+{- SIZING -}
 
 
 {-| Return a portion of 100%
@@ -186,10 +250,6 @@ space64 =
 fluid : Float -> Float -> Pct
 fluid numerator denominator =
     pct (100 * (numerator / denominator))
-
-
-
-{- SIZING -}
 
 
 {-|
