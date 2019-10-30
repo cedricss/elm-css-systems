@@ -22,14 +22,14 @@ Built from the Tailwind palette.
 
 ```elm
 view =
-  div
-      [ css
-          [ backgroundColor indigo300
-          , hover [ backgroundColor indigo400 ]
-          , color indigo900
-          ]
-      ]
-      []
+    div
+        [ css
+            [ backgroundColor indigo300
+            , hover [ backgroundColor indigo400 ]
+            , color indigo900
+            ]
+        ]
+        []
 ```
 
 [Browse all colors ➝](https://cedricsoulas.com/elm/css/systems#colors)
@@ -37,24 +37,44 @@ view =
 
 ## Spacing and sizing systems
 
-### Spacing
+```elm
+element =
+    div
+        [ css
+            [ marginTop space8
+            , padding space2
+            , width space32
+            ]
+        ]
+```
 
 ```elm
 view =
-  div
-      [ css
-          [ height (fluid 2 3)
-          , width (fluid 1 2)
-          , marginY space4
-          ]
-      ]
-      []
+    div
+        [ css
+            [ displayFlex
+            , flexWrap wrap
+            , maxHeight size3XL
+            , width (fluid 2 3)
+            ]
+        ]
 ```
 
 [Browse spacing ➝](https://cedricsoulas.com/elm/css/systems#spacing)
 ![Spacing systems](https://github.com/cedricss/elm-css-systems/raw/master/img/spacing.png)
 
 - [Learn more about `fluid`](https://package.elm-lang.org/packages/cedricss/elm-css-systems/latest/Css-Systems-Spacing#fluid)
+
+## Font size
+
+```elm
+  view =
+      span
+          [ css [ textLG ] ]
+          [ text "hello" ]
+```
+
+[Browse font size system ➝](https://cedricsoulas.com/elm/css/systems#text)
 
 ### Max height and max width
 
