@@ -1,19 +1,19 @@
 {
-  "type": "package",
-  "name": "cedricss/elm-css-systems",
-  "summary": "Design systems based on elm-css, inspired by Tailwind.",
-  "license": "MIT",
-  "version": "3.1.0",
-  "exposed-modules": [
-    "Css.Systems.Colors",
-    "Css.Systems.Spacing",
-    "Css.Systems.Utilities",
-    "Css.Systems.Text"
-  ],
-  "elm-version": "0.19.0 <= v < 0.20.0",
-  "dependencies": {
-    "elm/core": "1.0.0 <= v < 2.0.0",
-    "rtfeldman/elm-css": "16.0.1 <= v < 17.0.0"
-  },
-  "test-dependencies": {}
+    "type": "package",
+    "name": "cedricss/elm-css-systems",
+    "summary": "Design systems based on elm-css, inspired by Tailwind.",
+    "license": "MIT",
+    "version": "3.2.0",
+    "exposed-modules": [
+        "Css.Systems.Colors",
+        "Css.Systems.Spacing",
+        "Css.Systems.Utilities",
+        "Css.Systems.Text"
+    ],
+    "elm-version": "0.19.0 <= v < 0.20.0",
+    "dependencies": {
+        "elm/core": "1.0.0 <= v < 2.0.0",
+        "rtfeldman/elm-css": "16.0.1 <= v < 17.0.0"
+    },
+    "test-dependencies": {}
 }
