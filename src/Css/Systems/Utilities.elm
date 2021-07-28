@@ -9,7 +9,7 @@ module Css.Systems.Utilities exposing
 
 # Padding and margin utilities
 
-@docs paddingX, paddingY, marginX, marginY
+@docs paddingX, paddingY, marginX, marginY, negative
 
 
 # Flex items
@@ -73,6 +73,23 @@ marginY spacing =
         [ marginTop spacing
         , marginBottom spacing
         ]
+
+
+{-| Negates the value provided
+
+    marginX (negative space4)
+
+-}
+negative : Length compatible units -> Length compatible units
+negative rec =
+    let
+        newValue =
+            negate rec.numericValue
+    in
+    { rec
+        | numericValue = newValue
+        , value = String.fromFloat newValue ++ rec.unitLabel
+    }
 
 
 
