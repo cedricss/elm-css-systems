@@ -1,5 +1,5 @@
 module Css.Systems.Utilities exposing
-    ( paddingX, paddingY, marginX, marginY
+    ( paddingX, paddingY, marginX, marginY, negative
     , flexInitial, flexIgnoreInitialSize, flexAuto, flexNone
     , itemsStretch, itemsStart, itemsCenter, itemsEnd, itemsBaseline
     )
