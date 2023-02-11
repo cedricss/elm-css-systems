@@ -15,22 +15,22 @@ import Css exposing (hex)
 
 {-|
 
-    hex "000"
+    hex "000000"
 
 -}
 black : Css.Color
 black =
-    hex "000"
+    hex "000000"
 
 
 {-|
 
-    hex "fff"
+    hex "ffffff"
 
 -}
 white : Css.Color
 white =
-    hex "fff"
+    hex "ffffff"
 
 
 {-|
