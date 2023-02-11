@@ -3,7 +3,7 @@
     "name": "cedricss/elm-css-systems",
     "summary": "Design systems based on elm-css, inspired by Tailwind.",
     "license": "MIT",
-    "version": "3.2.0",
+    "version": "3.2.1",
     "exposed-modules": [
         "Css.Systems.Colors",
         "Css.Systems.Spacing",
